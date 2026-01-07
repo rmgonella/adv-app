@@ -1,0 +1,22 @@
+
+CREATE TABLE users (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(100),
+ email VARCHAR(100),
+ password VARCHAR(255)
+);
+
+CREATE TABLE contacts (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(100),
+ email VARCHAR(100),
+ message TEXT,
+ created_at DATETIME
+);
+
+CREATE TABLE posts (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ title VARCHAR(200),
+ content TEXT,
+ created_at DATETIME
+);
